@@ -40,7 +40,7 @@ Route::get('/gallery', function () {
 });
 
 Route::resource('/contacts', ContactController::class);
-Route::get('/contacts/create', [ContactController::class, 'create'])->name('contact.create');
+Route::get('/contacts/create', [ContactController::class, 'create'])->name('contacts.create');
 Route::post('/contacts/store', [ContactController::class, 'store'])->name('contact.store');
 
 Auth::routes();
